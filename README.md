@@ -65,7 +65,7 @@ exclude = request.query_params.getlist('exclude')
 fields = request.query_params.getlist('fields')
 nest = request.query_params.get('nest')
 ```
-the `getlist()` method returns a list of . That allows us to pass in multiple fields that we want to return or exclude multiple fields from the response.
+the `getlist()` method returns a list of all the values passed into the query parameter. That allows us to pass in multiple fields that we want to return or exclude multiple fields from the response.
 
 Next we need to handle those query parameters. We are going to create a dictionary that we can pass to the serializer as keyword arguments, that way if nothing is passed the serializer will return the default response.
 
